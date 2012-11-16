@@ -21,6 +21,7 @@ public class MainClass {
 		System.out.println("2 - eat some food");
 		System.out.println("3 - go to cage");
 		System.out.println("4 - go to wardrobe");
+		
 		//create variable that holds to users choose
 		int choose = scan.nextInt();
 		
@@ -38,7 +39,7 @@ public class MainClass {
 				}else if(choose == 4){
 					System.out.println("you choose "+choose);
 				}
-			}while(room.openDoor() != false);
+			}while(room.openDoor() == false);
 			
 		}else{
 			System.out.println("your chose is "+ choose +" you have to choose between 1-4");

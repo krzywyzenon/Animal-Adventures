@@ -19,7 +19,7 @@ public class Room {
 	}
 	
 	public boolean openDoor(){
-		if (doorUnlockingStatus=true){
+		if (doorUnlockingStatus==true){
 			System.out.println("Congratulations! You have opened the door and");
 			return true;
 		}
