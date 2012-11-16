@@ -4,15 +4,16 @@ public class Room {
 	int batHitPoints;
 	private boolean doorUnlockingStatus = false;
 	
+	// batHitPointsNumber is for future upgrades regarding adjusting difficulty
 	public Room(int food, int batHitPointsNumber){
 		
 	}
-	
+	//everytime animal eats this method should follow
 	public int animalEats(){
 		foodInRoom --;
 		return foodInRoom;
 	}
-	
+	//method to be used only if the player has the key
 	public void unlockDoor(){
 		doorUnlockingStatus = true;
 	}
