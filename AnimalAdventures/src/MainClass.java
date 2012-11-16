@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class MainClass {
 	private static Scanner scan;
+	
+	
 	public static void main(String[] args) {
 		//A new animal is created
 		Animal pinky = null;
@@ -22,16 +24,27 @@ public class MainClass {
 		//create variable that holds to users choose
 		int choose = scan.nextInt();
 		
-		//do while door is closed
-		do{
-			//If statement checks that user has chosen between 1 - 4 
-			if(choose > 0 && choose <= 4){
-				System.out.println("your chose is "+ choose);
-			}else{
-				System.out.println("your chose is "+ choose +" you have to choose between 1-4");
-			}
-			choose = scan.nextInt();
-		}while(1 == 2);
+		//If statement checks that user has chosen between 1 - 4 
+		if(choose > 0 && choose <= 4){
+			
+			do{	
+				
+				if(choose == 1){
+					System.out.println("you choose "+choose);
+				}else if(choose == 2){
+					System.out.println("you choose "+choose);
+				}else if(choose == 3){
+					System.out.println("you choose "+choose);
+				}else if(choose == 4){
+					System.out.println("you choose "+choose);
+				}
+			}while(room.openDoor() == false);
+			
+		}else{
+			System.out.println("your chose is "+ choose +" you have to choose between 1-4");
+		}
+		
+		
 		
 		//close the scanner
 		scan.close();
